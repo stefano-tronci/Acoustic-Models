@@ -1,0 +1,95 @@
+ELMER SOLVER (v 8.3) STARTED AT: 2020/02/22 15:03:26
+ParCommInit:  Initialize #PEs:            1
+MAIN: OMP_NUM_THREADS not set. Using only 1 thread per task.
+MAIN: 
+MAIN: =============================================================
+MAIN: ElmerSolver finite element software, Welcome!
+MAIN: This program is free software licensed under (L)GPL
+MAIN: Copyright 1st April 1995 - , CSC - IT Center for Science Ltd.
+MAIN: Webpage http://www.csc.fi/elmer, Email elmeradm@csc.fi
+MAIN: Version: 8.3 (Rev: f90766a, Compiled: 2018-10-31)
+MAIN:  Running one task without MPI parallelization.
+MAIN:  Running with just one thread per task.
+MAIN:  HYPRE library linked in.
+MAIN:  MUMPS library linked in.
+MAIN:  Lua interpreted linked in.
+MAIN: =============================================================
+MAIN: 
+MAIN: 
+MAIN: -------------------------------------
+MAIN: Reading Model: case.sif
+LoadInputFile: Scanning input file: case.sif
+LoadInputFile: Loading input file: case.sif
+Loading user function library: [StressSolve]...[StressSolver_Init0]
+LoadMesh: Base mesh name: ./.
+LoadMesh: Scaling coordinates: 1.000E-03 1.000E-03 1.000E-03
+LoadMesh: Elapsed REAL time:     0.0793 (s)
+MAIN: -------------------------------------
+AddVtuOutputSolverHack: Adding ResultOutputSolver to write VTU output in file: case
+Loading user function library: [StressSolve]...[StressSolver_Init]
+Loading user function library: [StressSolve]...[StressSolver_bulk]
+Loading user function library: [StressSolve]...[StressSolver]
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: Computing matrix structure for: linear elasticity...done.
+OptimizeBandwidth: Half bandwidth without optimization: 9254
+OptimizeBandwidth: 
+OptimizeBandwidth: Bandwidth Optimization ...done.
+OptimizeBandwidth: Half bandwidth after optimization: 1262
+OptimizeBandwidth: ---------------------------------------------------------
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_Init]
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_bulk]
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver]
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Steady state iteration:            1
+MAIN: -------------------------------------
+MAIN: 
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: linear elasticity
+StressSolve: 
+StressSolve: --------------------------------------------------
+StressSolve: Solving displacements from linear elasticity model
+StressSolve: --------------------------------------------------
+StressSolve: Starting assembly...
+StressSolve: Assembly:
+: ..Bulk assembly done
+DefUtils::DefaultDirichletBCs: Setting Dirichlet boundary conditions
+DefUtils::DefaultDirichletBCs: Dirichlet boundary conditions set
+StressSolve: Set boundaries done
+WARNING:: ListFind: 
+WARNING:: ListFind:  Requested property: [Linear System Convergence Tolerance], not found
+WARNING:: ListFind: 
+EigenSolve: 
+EigenSolve: Eigen system solution complete:
+EigenSolve: 
+EigenSolve: Convergence criterion is:    1.110E-16
+EigenSolve: Number of converged Ritz values is: 5
+EigenSolve: Number of update iterations taken: 2
+EigenSolve: 
+EigenSolve: Computed 5 Eigen Values
+EigenSolve: --------------------------------
+EigenSolve: 1:    2.955136E+07   0.000000E+00
+EigenSolve: 2:    2.955136E+07   0.000000E+00
+EigenSolve: 3:    1.066228E+09   0.000000E+00
+EigenSolve: 4:    1.066228E+09   0.000000E+00
+EigenSolve: 5:    2.016779E+09   0.000000E+00
+EigenSolve: --------------------------------
+StressSolver: All done
+StressSolver: ------------------------------------------
+Loading user function library: [StressSolve]...[StressSolver_post]
+ComputeChange: SS (ITER=1) (NRM,RELC): (  0.0000000      0.0000000     ) :: linear elasticity
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: internalvtuoutputsolver
+ResultOutputSolver: -------------------------------------
+ResultOutputSolve: Saving with prefix: case
+ResultOutputSolver: Creating list for saving - if not present
+CreateListForSaving: Field Variables for Saving
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+VtuOutputSolver: Saving results in VTK XML format with prefix: case
+VtuOutputSolver: Saving number of partitions: 1
+ResultOutputSolver: -------------------------------------
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_post]
+ElmerSolver: *** Elmer Solver: ALL DONE ***
+ElmerSolver: The end
+SOLVER TOTAL TIME(CPU,REAL):        85.21       86.10
+ELMER SOLVER FINISHED AT: 2020/02/22 15:04:52
