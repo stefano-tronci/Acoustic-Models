@@ -3,7 +3,7 @@ using Plots
 
 include("exact.jl")
 
-f = 1000.0
+f = 999.99999999999989
 U = 0.75
 c = 343.0
 ρ = 1.205
