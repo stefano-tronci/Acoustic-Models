@@ -5,3 +5,4 @@
 *.{brep, csv, pvsm, png} filter=lfs diff=lfs merge=lfs -text
 *.{csv, pvsm, png} filter=lfs diff=lfs merge=lfs -text
 *.{pvsm, png} filter=lfs diff=lfs merge=lfs -text
+*.{png} filter=lfs diff=lfs merge=lfs -text

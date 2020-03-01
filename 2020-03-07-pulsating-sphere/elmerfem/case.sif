@@ -55,13 +55,13 @@ Solver 1
   Nonlinear System Newton After Tolerance = 1.0e-3
   Nonlinear System Relaxation Factor = 1
   Linear System Solver = Iterative
-  Linear System Iterative Method = BiCGStab
+  Linear System Iterative Method = BiCGStabl
   Linear System Max Iterations = 500
   Linear System Convergence Tolerance = 1.0e-10
   BiCGstabl polynomial degree = 2
   Linear System Preconditioning = ILUT
   Linear System ILUT Tolerance = 1.0e-3
-  Linear System Abort Not Converged = False
+  Linear System Abort Not Converged = True
   Linear System Residual Output = 10
   Linear System Precondition Recompute = 1
 End
@@ -86,12 +86,12 @@ End
 Boundary Condition 1
   Target Boundaries(1) = 1 
   Name = "Radiator"
-  Wave Flux 2 = Real MATC "2 * pi * f * 1.205 * U"
+  Wave Flux 2 = Real MATC "2 * pi * f * p * U"
 End
 
 Boundary Condition 2
   Target Boundaries(1) = 2 
-  Name = "MatchedZ"
+  Name = "Outlet"
   Wave impedance 1 = Real MATC "((2 * pi * f * r)^2) / (c * (1 + (((2 * pi * f * r)^2) / (c^2))))"
   Wave impedance 2 = Real MATC "(2 * pi * f * r) / (1 + (((2 * pi * f * r)^2) / (c^2)))"
 End

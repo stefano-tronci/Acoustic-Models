@@ -1,4 +1,4 @@
-ELMER SOLVER (v 8.3) STARTED AT: 2020/02/29 17:25:01
+ELMER SOLVER (v 8.3) STARTED AT: 2020/03/01 19:19:46
 ParCommInit:  Initialize #PEs:            1
 MAIN: OMP_NUM_THREADS not set. Using only 1 thread per task.
 MAIN: 
@@ -1005,7 +1005,7 @@ ElementMetric: Node: 4 dCoord:   5.000E-01   0.000E+00   0.000E+00
 ElementMetric: Node: 5 dCoord:   5.000E-01   5.000E-01   0.000E+00
 ElementMetric: Node: 6 dCoord:   0.000E+00   5.000E-01   0.000E+00
 ElementMetric: Element dim larger than meshdim: 2 vs. 0
-LoadMesh: Elapsed REAL time:     0.2911 (s)
+LoadMesh: Elapsed REAL time:     0.3131 (s)
 MAIN: -------------------------------------
 AddVtuOutputSolverHack: Adding ResultOutputSolver to write VTU output in file: case
 Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_Init]
@@ -1036,19 +1036,17 @@ HelmholtzSolve: -------------------------------------
 HelmholtzSolve: 
 HelmholtzSolve: Starting Assembly
 HelmholtzSolve: Assembly:
-: .....Assembly done
+: ......Assembly done
 DefUtils::DefaultDirichletBCs: Setting Dirichlet boundary conditions
 DefUtils::DefaultDirichletBCs: Dirichlet boundary conditions set
 CRS_ComplexILUT: ILU(T) (Complex), Starting factorization:
 CRS_ComplexILUT:  ILU(T) (Complex), NOF nonzeros:      1729329
 CRS_ComplexILUT:  ILU(T) (Complex), filling (%):          270
-CRS_ComplexILUT: ILU(T) (Complex), Factorization ready at (s):     5.79
+CRS_ComplexILUT: ILU(T) (Complex), Factorization ready at (s):     6.99
 IterSolver: Calling complex iterative solver
-      10 0.1619E-06
-      14 0.8183E-10
 ComputeChange: NS (ITER=1) (NRM,RELC): (  7.5211233      2.0000000     ) :: helmholtz equation
-HelmholtzSolve: iter:    1 Assembly: (s)    5.89    5.89
-HelmholtzSolve: iter:    1 Solve:    (s)    6.34    6.34
+HelmholtzSolve: iter:    1 Assembly: (s)    6.91    6.91
+HelmholtzSolve: iter:    1 Solve:    (s)    7.62    7.62
 HelmholtzSolve: 
 HelmholtzSolve: -------------------------------------
 HelmholtzSolve:  Helmholtz iteration           2
@@ -1057,18 +1055,17 @@ HelmholtzSolve: -------------------------------------
 HelmholtzSolve: 
 HelmholtzSolve: Starting Assembly
 HelmholtzSolve: Assembly:
-: .....Assembly done
+: ......Assembly done
 DefUtils::DefaultDirichletBCs: Setting Dirichlet boundary conditions
 DefUtils::DefaultDirichletBCs: Dirichlet boundary conditions set
 CRS_ComplexILUT: ILU(T) (Complex), Starting factorization:
 CRS_ComplexILUT:  ILU(T) (Complex), NOF nonzeros:      1729329
 CRS_ComplexILUT:  ILU(T) (Complex), filling (%):          270
-CRS_ComplexILUT: ILU(T) (Complex), Factorization ready at (s):     6.49
+CRS_ComplexILUT: ILU(T) (Complex), Factorization ready at (s):     7.19
 IterSolver: Calling complex iterative solver
-       1 0.1560E-10
-ComputeChange: NS (ITER=2) (NRM,RELC): (  7.5211233     0.10452606E-10 ) :: helmholtz equation
-HelmholtzSolve: iter:    2 Assembly: (s)    5.80   11.70
-HelmholtzSolve: iter:    2 Solve:    (s)    6.57   12.91
+ComputeChange: NS (ITER=2) (NRM,RELC): (  7.5211233      0.0000000     ) :: helmholtz equation
+HelmholtzSolve: iter:    2 Assembly: (s)    6.67   13.57
+HelmholtzSolve: iter:    2 Solve:    (s)    7.22   14.84
 Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_post]
 ComputeChange: SS (ITER=1) (NRM,RELC): (  7.5211233      2.0000000     ) :: helmholtz equation
 SingleSolver: Attempting to call solver
@@ -1084,5 +1081,5 @@ ResultOutputSolver: -------------------------------------
 Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_post]
 ElmerSolver: *** Elmer Solver: ALL DONE ***
 ElmerSolver: The end
-SOLVER TOTAL TIME(CPU,REAL):        33.71       36.26
-ELMER SOLVER FINISHED AT: 2020/02/29 17:25:37
+SOLVER TOTAL TIME(CPU,REAL):        40.53       41.51
+ELMER SOLVER FINISHED AT: 2020/03/01 19:20:27
