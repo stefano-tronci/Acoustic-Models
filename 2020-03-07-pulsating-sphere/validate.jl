@@ -28,9 +28,9 @@ realplt = plot(
     real.(err),
     legend=false,
     framestyle=:box,
-    xlabel="r [m]",
-    ylabel="Error [Pa]",
-    title="Real Part"
+    xlabel="Distance from Source [m]",
+    ylabel="[Pa]",
+    title="Real Part of the Error"
     )
 
 imagplt = plot(
@@ -38,9 +38,9 @@ imagplt = plot(
     imag.(err),
     legend=false,
     framestyle=:box,
-    xlabel="r [m]",
-    ylabel="Error [Pa]",
-    title="Imaginary Part"
+    xlabel="Distance from Source [m]",
+    ylabel="[Pa]",
+    title="Imaginary Part of the Error"
 )
 
 absplt = plot(
@@ -48,9 +48,9 @@ absplt = plot(
     abs.(err),
     legend=false,
     framestyle=:box,
-    xlabel="r [m]",
-    ylabel="Error [Pa]",
-    title="Absolute Value"
+    xlabel="Distance from Source [m]",
+    ylabel="[Pa]",
+    title="Absolute Value of the Error"
 )
 
 angplt = plot(
@@ -58,9 +58,9 @@ angplt = plot(
     angle.(err),
     legend=false,
     framestyle=:box,
-    xlabel="r [m]",
-    ylabel="Error [rad]",
-    title="Phase"
+    xlabel="Distance from Source [m]",
+    ylabel="[rad]",
+    title="Phase of the Error"
 )
 
 dBplt = plot(
@@ -68,14 +68,24 @@ dBplt = plot(
     20.0 * log10.(abs.(femSolution) ./ abs.(exactSolution)),
     legend=false,
     framestyle=:box,
-    xlabel="r [m]",
-    ylabel="Error [dB re Exact]",
-    title="dB Error"
+    xlabel="Distance from Source [m]",
+    ylabel="[dB re Exact]",
+    title="Error with respect Exact Solution (Magnitude)"
 )
 
-l = @layout [grid(2,2) a]
+angRplt = plot(
+    r,
+    angle.(femSolution ./ exactSolution),
+    legend=false,
+    framestyle=:box,
+    xlabel="Distance from Source [m]",
+    ylabel="[rad re Exact]",
+    title="Error with respect Exact Solution (Phase)"
+)
 
-errorPlot = plot(realplt, imagplt, absplt, angplt, dBplt, layout=l)
+l = @layout [grid(2,2) grid(2, 1)]
+
+errorPlot = plot(realplt, imagplt, absplt, angplt, dBplt, angRplt, layout=l)
 
 display(errorPlot)
 
