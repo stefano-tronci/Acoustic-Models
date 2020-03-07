@@ -9,7 +9,7 @@ c = 343.0
 ρ = 1.205
 a = 0.005
 
-linedata = readdlm("linedata.csv", ',')
+linedata = readdlm("linedata_2.csv", ',')
 
 x = Float64.(linedata[2:end, 3])
 y = Float64.(linedata[2:end, 4])

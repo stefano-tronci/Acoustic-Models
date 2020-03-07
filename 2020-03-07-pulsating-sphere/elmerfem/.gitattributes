@@ -1,3 +1,0 @@
-*.{vtu, unv, FCStd, FCStd1, hdf, brep, csv, pvsm, png} filter=lfs diff=lfs merge=lfs -text
-*.{unv, FCStd, FCStd1, hdf, brep, csv, pvsm, png} filter=lfs diff=lfs merge=lfs -text
-*.{png} filter=lfs diff=lfs merge=lfs -text
