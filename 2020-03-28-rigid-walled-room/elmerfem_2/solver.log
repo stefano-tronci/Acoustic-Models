@@ -1,0 +1,1398 @@
+ELMER SOLVER (v 8.3) STARTED AT: 2020/04/04 17:24:29
+ParCommInit:  Initialize #PEs:            1
+MAIN: OMP_NUM_THREADS not set. Using only 1 thread per task.
+MAIN: 
+MAIN: =============================================================
+MAIN: ElmerSolver finite element software, Welcome!
+MAIN: This program is free software licensed under (L)GPL
+MAIN: Copyright 1st April 1995 - , CSC - IT Center for Science Ltd.
+MAIN: Webpage http://www.csc.fi/elmer, Email elmeradm@csc.fi
+MAIN: Version: 8.3 (Rev: f90766a, Compiled: 2018-10-31)
+MAIN:  Running one task without MPI parallelization.
+MAIN:  Running with just one thread per task.
+MAIN:  HYPRE library linked in.
+MAIN:  MUMPS library linked in.
+MAIN:  Lua interpreted linked in.
+MAIN: =============================================================
+MAIN: 
+MAIN: 
+MAIN: -------------------------------------
+MAIN: Reading Model: case.sif
+LoadInputFile: Scanning input file: case.sif
+LoadInputFile: Loading input file: case.sif
+Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_Init0]
+LoadMesh: Base mesh name: ./.
+LoadMesh: Scaling coordinates: 1.000E-03 1.000E-03 1.000E-03
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 3D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 Coord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 Coord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 Coord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   0.000E+00   0.000E+00   1.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 6 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 7 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 8 dCoord:   0.000E+00   0.000E+00   5.000E-01
+ElementMetric: Node: 9 dCoord:   5.000E-01   0.000E+00   5.000E-01
+ElementMetric: Node: 10 dCoord:   0.000E+00   5.000E-01   5.000E-01
+ElementMetric: Element dim larger than meshdim: 3 vs. 0
+ERROR:: ElementMetric: Degenerate 2D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Element dim larger than meshdim: 2 vs. 0
+ERROR:: ElementMetric: Degenerate 2D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Element dim larger than meshdim: 2 vs. 0
+ERROR:: ElementMetric: Degenerate 2D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Element dim larger than meshdim: 2 vs. 0
+ERROR:: ElementMetric: Degenerate 2D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Element dim larger than meshdim: 2 vs. 0
+ERROR:: ElementMetric: Degenerate 2D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Element dim larger than meshdim: 2 vs. 0
+ERROR:: ElementMetric: Degenerate 2D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Element dim larger than meshdim: 2 vs. 0
+ERROR:: ElementMetric: Degenerate 2D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Element dim larger than meshdim: 2 vs. 0
+ERROR:: ElementMetric: Degenerate 2D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Element dim larger than meshdim: 2 vs. 0
+ERROR:: ElementMetric: Degenerate 2D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Element dim larger than meshdim: 2 vs. 0
+ERROR:: ElementMetric: Degenerate 2D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Element dim larger than meshdim: 2 vs. 0
+ERROR:: ElementMetric: Degenerate 2D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Element dim larger than meshdim: 2 vs. 0
+ERROR:: ElementMetric: Degenerate 2D element: -1
+ElementMetric: Body Id: 0 DetG:   0.000E+00
+ElementMetric: Node: 1 Coord:   0.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 2 Coord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 Coord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 Coord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 Coord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 Coord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Node: 2 dCoord:   1.000E+00   0.000E+00   0.000E+00
+ElementMetric: Node: 3 dCoord:   0.000E+00   1.000E+00   0.000E+00
+ElementMetric: Node: 4 dCoord:   5.000E-01   0.000E+00   0.000E+00
+ElementMetric: Node: 5 dCoord:   5.000E-01   5.000E-01   0.000E+00
+ElementMetric: Node: 6 dCoord:   0.000E+00   5.000E-01   0.000E+00
+ElementMetric: Element dim larger than meshdim: 2 vs. 0
+LoadMesh: Elapsed REAL time:     0.2625 (s)
+MAIN: -------------------------------------
+AddVtuOutputSolverHack: Adding ResultOutputSolver to write VTU output in file: case
+Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_Init]
+Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_bulk]
+Loading user function library: [HelmholtzSolve]...[HelmholtzSolver]
+OptimizeBandwidth: ---------------------------------------------------------
+OptimizeBandwidth: Computing matrix structure for: helmholtz equation...done.
+OptimizeBandwidth: Half bandwidth without optimization: 27330
+OptimizeBandwidth: 
+OptimizeBandwidth: Bandwidth Optimization ...done.
+OptimizeBandwidth: Half bandwidth after optimization: 3034
+OptimizeBandwidth: ---------------------------------------------------------
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_Init]
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_bulk]
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver]
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Time: 1/10   1.0000000000000000
+MAIN: -------------------------------------
+MAIN: 
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: helmholtz equation
+HelmholtzSolve: 
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve:  Helmholtz iteration           1
+HelmholtzSolve:  Frequency (Hz):    34.299999999999997
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve: 
+HelmholtzSolve: Starting Assembly
+HelmholtzSolve: Assembly:
+: ......Assembly done
+DefUtils::DefaultDirichletBCs: Setting Dirichlet boundary conditions
+DefUtils::DefaultDirichletBCs: Dirichlet boundary conditions set
+CRS_ComplexILUT: ILU(T) (Complex), Starting factorization:
+CRS_ComplexILUT:  ILU(T) (Complex), NOF nonzeros:      1989665
+CRS_ComplexILUT:  ILU(T) (Complex), filling (%):          273
+CRS_ComplexILUT: ILU(T) (Complex), Factorization ready at (s):     3.76
+IterSolver: Calling complex iterative solver
+      10 0.4972E-02
+      18 0.4088E-10
+ComputeChange: NS (ITER=1) (NRM,RELC): (  83.936716      2.0000000     ) :: helmholtz equation
+HelmholtzSolve: iter:    1 Assembly: (s)    6.34    6.34
+HelmholtzSolve: iter:    1 Solve:    (s)    5.18    5.18
+Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_post]
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: internalvtuoutputsolver
+ResultOutputSolver: -------------------------------------
+ResultOutputSolve: Saving with prefix: case
+ResultOutputSolver: Creating list for saving - if not present
+CreateListForSaving: Field Variables for Saving
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+VtuOutputSolver: Saving results in VTK XML format with prefix: case
+VtuOutputSolver: Saving number of partitions: 1
+ResultOutputSolver: -------------------------------------
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_post]
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Time: 2/10   2.0000000000000000
+MAIN: Estimated time left:  1.8 minutes
+MAIN: -------------------------------------
+MAIN: 
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: helmholtz equation
+HelmholtzSolve: 
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve:  Helmholtz iteration           1
+HelmholtzSolve:  Frequency (Hz):    42.875000000000007
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve: 
+HelmholtzSolve: Starting Assembly
+HelmholtzSolve: Assembly:
+: ......Assembly done
+DefUtils::DefaultDirichletBCs: Setting Dirichlet boundary conditions
+DefUtils::DefaultDirichletBCs: Dirichlet boundary conditions set
+CRS_ComplexILUT: ILU(T) (Complex), Starting factorization:
+CRS_ComplexILUT:  ILU(T) (Complex), NOF nonzeros:      2000837
+CRS_ComplexILUT:  ILU(T) (Complex), filling (%):          275
+CRS_ComplexILUT: ILU(T) (Complex), Factorization ready at (s):     4.55
+IterSolver: Calling complex iterative solver
+      10 0.4530E-02
+      19 0.5279E-10
+ComputeChange: NS (ITER=1) (NRM,RELC): (  35.325597     0.81519665     ) :: helmholtz equation
+HelmholtzSolve: iter:    1 Assembly: (s)    6.79    6.79
+HelmholtzSolve: iter:    1 Solve:    (s)    6.18    6.18
+Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_post]
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: internalvtuoutputsolver
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_post]
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Time: 3/10   3.0000000000000000
+MAIN: Estimated time left:  1.8 minutes
+MAIN: -------------------------------------
+MAIN: 
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: helmholtz equation
+HelmholtzSolve: 
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve:  Helmholtz iteration           1
+HelmholtzSolve:  Frequency (Hz):    54.906790336000000
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve: 
+HelmholtzSolve: Starting Assembly
+HelmholtzSolve: Assembly:
+: ......Assembly done
+DefUtils::DefaultDirichletBCs: Setting Dirichlet boundary conditions
+DefUtils::DefaultDirichletBCs: Dirichlet boundary conditions set
+CRS_ComplexILUT: ILU(T) (Complex), Starting factorization:
+CRS_ComplexILUT:  ILU(T) (Complex), NOF nonzeros:      2021810
+CRS_ComplexILUT:  ILU(T) (Complex), filling (%):          278
+CRS_ComplexILUT: ILU(T) (Complex), Factorization ready at (s):     4.23
+IterSolver: Calling complex iterative solver
+      10 0.1095E-01
+      20 0.4365E-08
+      22 0.2581E-10
+ComputeChange: NS (ITER=1) (NRM,RELC): (  19.027175     0.59972737     ) :: helmholtz equation
+HelmholtzSolve: iter:    1 Assembly: (s)    6.78    6.78
+HelmholtzSolve: iter:    1 Solve:    (s)    6.29    6.29
+Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_post]
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: internalvtuoutputsolver
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_post]
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Time: 4/10   4.0000000000000000
+MAIN: Estimated time left:  1.6 minutes
+MAIN: -------------------------------------
+MAIN: 
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: helmholtz equation
+HelmholtzSolve: 
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve:  Helmholtz iteration           1
+HelmholtzSolve:  Frequency (Hz):    57.166666666700010
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve: 
+HelmholtzSolve: Starting Assembly
+HelmholtzSolve: Assembly:
+: ......Assembly done
+DefUtils::DefaultDirichletBCs: Setting Dirichlet boundary conditions
+DefUtils::DefaultDirichletBCs: Dirichlet boundary conditions set
+CRS_ComplexILUT: ILU(T) (Complex), Starting factorization:
+CRS_ComplexILUT:  ILU(T) (Complex), NOF nonzeros:      2026531
+CRS_ComplexILUT:  ILU(T) (Complex), filling (%):          279
+CRS_ComplexILUT: ILU(T) (Complex), Factorization ready at (s):     3.85
+IterSolver: Calling complex iterative solver
+      10 0.4751E-02
+      20 0.2339E-08
+ComputeChange: NS (ITER=1) (NRM,RELC): (  10.623450     0.56684976     ) :: helmholtz equation
+HelmholtzSolve: iter:    1 Assembly: (s)    6.51    6.51
+HelmholtzSolve: iter:    1 Solve:    (s)    5.92    5.92
+Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_post]
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: internalvtuoutputsolver
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_post]
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Time: 5/10   5.0000000000000000
+MAIN: Estimated time left:  1.3 minutes
+MAIN: -------------------------------------
+MAIN: 
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: helmholtz equation
+HelmholtzSolve: 
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve:  Helmholtz iteration           1
+HelmholtzSolve:  Frequency (Hz):    66.667216664400001
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve: 
+HelmholtzSolve: Starting Assembly
+HelmholtzSolve: Assembly:
+: ......Assembly done
+DefUtils::DefaultDirichletBCs: Setting Dirichlet boundary conditions
+DefUtils::DefaultDirichletBCs: Dirichlet boundary conditions set
+CRS_ComplexILUT: ILU(T) (Complex), Starting factorization:
+CRS_ComplexILUT:  ILU(T) (Complex), NOF nonzeros:      2049378
+CRS_ComplexILUT:  ILU(T) (Complex), filling (%):          282
+CRS_ComplexILUT: ILU(T) (Complex), Factorization ready at (s):     3.69
+IterSolver: Calling complex iterative solver
+      10 0.6957E+00
+      20 0.1820E-04
+      26 0.2480E-10
+ComputeChange: NS (ITER=1) (NRM,RELC): (  8.5168191     0.22012553     ) :: helmholtz equation
+HelmholtzSolve: iter:    1 Assembly: (s)    6.34    6.34
+HelmholtzSolve: iter:    1 Solve:    (s)    5.99    5.99
+Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_post]
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: internalvtuoutputsolver
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_post]
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Time: 6/10   6.0000000000000000
+MAIN: Estimated time left:  1.1 minutes
+MAIN: -------------------------------------
+MAIN: 
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: helmholtz equation
+HelmholtzSolve: 
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve:  Helmholtz iteration           1
+HelmholtzSolve:  Frequency (Hz):    68.599999999999994
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve: 
+HelmholtzSolve: Starting Assembly
+HelmholtzSolve: Assembly:
+: .....Assembly done
+DefUtils::DefaultDirichletBCs: Setting Dirichlet boundary conditions
+DefUtils::DefaultDirichletBCs: Dirichlet boundary conditions set
+CRS_ComplexILUT: ILU(T) (Complex), Starting factorization:
+CRS_ComplexILUT:  ILU(T) (Complex), NOF nonzeros:      2054322
+CRS_ComplexILUT:  ILU(T) (Complex), filling (%):          282
+CRS_ComplexILUT: ILU(T) (Complex), Factorization ready at (s):     3.75
+IterSolver: Calling complex iterative solver
+      10 0.4108E-01
+      20 0.1454E-03
+      28 0.6187E-10
+ComputeChange: NS (ITER=1) (NRM,RELC): (  5.0256778     0.51558312     ) :: helmholtz equation
+HelmholtzSolve: iter:    1 Assembly: (s)    6.30    6.30
+HelmholtzSolve: iter:    1 Solve:    (s)    5.95    5.95
+Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_post]
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: internalvtuoutputsolver
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_post]
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Time: 7/10   7.0000000000000000
+MAIN: Estimated time left: 49.4 seconds
+MAIN: -------------------------------------
+MAIN: 
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: helmholtz equation
+HelmholtzSolve: 
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve:  Helmholtz iteration           1
+HelmholtzSolve:  Frequency (Hz):    71.458333333300004
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve: 
+HelmholtzSolve: Starting Assembly
+HelmholtzSolve: Assembly:
+: .....Assembly done
+DefUtils::DefaultDirichletBCs: Setting Dirichlet boundary conditions
+DefUtils::DefaultDirichletBCs: Dirichlet boundary conditions set
+CRS_ComplexILUT: ILU(T) (Complex), Starting factorization:
+CRS_ComplexILUT:  ILU(T) (Complex), NOF nonzeros:      2062607
+CRS_ComplexILUT:  ILU(T) (Complex), filling (%):          284
+CRS_ComplexILUT: ILU(T) (Complex), Factorization ready at (s):     3.69
+IterSolver: Calling complex iterative solver
+      10 0.4269E-01
+      20 0.4397E-02
+      28 0.5462E-10
+ComputeChange: NS (ITER=1) (NRM,RELC): (  6.5407529     0.26197799     ) :: helmholtz equation
+HelmholtzSolve: iter:    1 Assembly: (s)    6.22    6.22
+HelmholtzSolve: iter:    1 Solve:    (s)    5.95    5.95
+Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_post]
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: internalvtuoutputsolver
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_post]
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Time: 8/10   8.0000000000000000
+MAIN: Estimated time left: 36.9 seconds
+MAIN: -------------------------------------
+MAIN: 
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: helmholtz equation
+HelmholtzSolve: 
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve:  Helmholtz iteration           1
+HelmholtzSolve:  Frequency (Hz):    79.264010766400006
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve: 
+HelmholtzSolve: Starting Assembly
+HelmholtzSolve: Assembly:
+: ......Assembly done
+DefUtils::DefaultDirichletBCs: Setting Dirichlet boundary conditions
+DefUtils::DefaultDirichletBCs: Dirichlet boundary conditions set
+CRS_ComplexILUT: ILU(T) (Complex), Starting factorization:
+CRS_ComplexILUT:  ILU(T) (Complex), NOF nonzeros:      2089274
+CRS_ComplexILUT:  ILU(T) (Complex), filling (%):          287
+CRS_ComplexILUT: ILU(T) (Complex), Factorization ready at (s):     3.97
+IterSolver: Calling complex iterative solver
+      10 0.5155E+00
+      20 0.1329E-01
+      30 0.4009E-10
+ComputeChange: NS (ITER=1) (NRM,RELC): (  7.0926476     0.80962142E-01 ) :: helmholtz equation
+HelmholtzSolve: iter:    1 Assembly: (s)    6.53    6.53
+HelmholtzSolve: iter:    1 Solve:    (s)    6.45    6.45
+Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_post]
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: internalvtuoutputsolver
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_post]
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Time: 9/10   9.0000000000000000
+MAIN: Estimated time left: 26.1 seconds
+MAIN: -------------------------------------
+MAIN: 
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: helmholtz equation
+HelmholtzSolve: 
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve:  Helmholtz iteration           1
+HelmholtzSolve:  Frequency (Hz):    80.896388207399994
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve: 
+HelmholtzSolve: Starting Assembly
+HelmholtzSolve: Assembly:
+: ......Assembly done
+DefUtils::DefaultDirichletBCs: Setting Dirichlet boundary conditions
+DefUtils::DefaultDirichletBCs: Dirichlet boundary conditions set
+CRS_ComplexILUT: ILU(T) (Complex), Starting factorization:
+CRS_ComplexILUT:  ILU(T) (Complex), NOF nonzeros:      2095549
+CRS_ComplexILUT:  ILU(T) (Complex), filling (%):          288
+CRS_ComplexILUT: ILU(T) (Complex), Factorization ready at (s):     4.27
+IterSolver: Calling complex iterative solver
+      10 0.2289E+00
+      20 0.3576E-02
+      30 0.3959E-10
+ComputeChange: NS (ITER=1) (NRM,RELC): (  4.0855179     0.53803635     ) :: helmholtz equation
+HelmholtzSolve: iter:    1 Assembly: (s)    7.00    7.00
+HelmholtzSolve: iter:    1 Solve:    (s)    6.96    6.96
+Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_post]
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: internalvtuoutputsolver
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_post]
+MAIN: 
+MAIN: -------------------------------------
+MAIN:  Time: 10/10   10.000000000000000
+MAIN: Estimated time left: 14.2 seconds
+MAIN: -------------------------------------
+MAIN: 
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: helmholtz equation
+HelmholtzSolve: 
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve:  Helmholtz iteration           1
+HelmholtzSolve:  Frequency (Hz):    85.750000000000014
+HelmholtzSolve: -------------------------------------
+HelmholtzSolve: 
+HelmholtzSolve: Starting Assembly
+HelmholtzSolve: Assembly:
+: ......Assembly done
+DefUtils::DefaultDirichletBCs: Setting Dirichlet boundary conditions
+DefUtils::DefaultDirichletBCs: Dirichlet boundary conditions set
+CRS_ComplexILUT: ILU(T) (Complex), Starting factorization:
+CRS_ComplexILUT:  ILU(T) (Complex), NOF nonzeros:      2116728
+CRS_ComplexILUT:  ILU(T) (Complex), filling (%):          291
+CRS_ComplexILUT: ILU(T) (Complex), Factorization ready at (s):     4.18
+IterSolver: Calling complex iterative solver
+      10 0.4312E+00
+      20 0.4363E-02
+      30 0.3419E-06
+ComputeChange: NS (ITER=1) (NRM,RELC): (  2.2149069     0.59380472     ) :: helmholtz equation
+HelmholtzSolve: iter:    1 Assembly: (s)    6.68    6.68
+HelmholtzSolve: iter:    1 Solve:    (s)    7.46    7.46
+Loading user function library: [HelmholtzSolve]...[HelmholtzSolver_post]
+SingleSolver: Attempting to call solver
+SingleSolver: Solver Equation string is: internalvtuoutputsolver
+ResultOutputSolver: -------------------------------------
+ResultOutputSolver: Saving in unstructured VTK XML (.vtu) format
+ResultOutputSolver: -------------------------------------
+Loading user function library: [ResultOutputSolve]...[ResultOutputSolver_post]
+ElmerSolver: *** Elmer Solver: ALL DONE ***
+ElmerSolver: The end
+SOLVER TOTAL TIME(CPU,REAL):       137.50      143.09
+ELMER SOLVER FINISHED AT: 2020/04/04 17:26:52
