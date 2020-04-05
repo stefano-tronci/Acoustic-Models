@@ -78,3 +78,5 @@
 2020-03-28-rigid-walled-room/geometry_1.brep filter=lfs diff=lfs merge=lfs -text
 2020-03-28-rigid-walled-room/geometry_2.brep filter=lfs diff=lfs merge=lfs -text
 2020-03-28-rigid-walled-room/Mesh_2.unv filter=lfs diff=lfs merge=lfs -text
+2020-03-28-rigid-walled-room/elmerfem_2/anim.gif filter=lfs diff=lfs merge=lfs -text
+2020-03-28-rigid-walled-room/elmerfem_2/*.pvms filter=lfs diff=lfs merge=lfs -text
